@@ -14,7 +14,7 @@ export default async function Home() {
       </h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-col-4 gap-7'>
        
-       {results.map((item) => (
+       {results?.map((item) => (
         <Card 
         key={item._id}
         name={item.name}
