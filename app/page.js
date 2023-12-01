@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import Loader from '@/components/Loader'
 import { fetchGames } from '@/lib/action'
 
-export default async function () {
+export default async function Home() {
     const results = await fetchGames(1)
   return (
     <main className='flex max-w-screen-2xl mx-auto flex-col items-center p-4 md:p-8 lg:p-12 '>
